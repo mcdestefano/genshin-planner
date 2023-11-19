@@ -1,3 +1,7 @@
+A planner app for organizing daily/weekly/long-term goals for Genshin Impact.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

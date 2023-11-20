@@ -25,5 +25,15 @@ const inventory = [
     id: '13D07535-C59E-4157-A011-F8D2EF4E0CBB',
     name: 'Fake Item',
     quantity: '0',
+    /* NOTE: Want to include connection to next item in crafting chain? If so where? */
+  },
+];
+
+const priorities = [
+  {
+    id: 'CC27C14A-0ACF-4F4A-A6C9-D45682C144B9',
+    name: 'Fake Character Level 90',
+    rank: 1,
+    /* NOTE: What should this include? How should it work? Tied to account */
   },
 ];

@@ -1,8 +1,8 @@
-import TempLogo from '@/app/ui/temp-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-import {lusitana} from '@/app/ui/fonts';
-import Image from 'next/image';
+import TempLogo from "@/app/ui/temp-logo";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { lusitana } from "@/app/ui/fonts";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -13,12 +13,13 @@ export default function Page() {
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-        <div
-          className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
-        />
-          <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to the Genshin Impact Planner!</strong> This is where you can plan all your daily, weekly, and long-term
-            activities for Genshin Impact.
+          <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent" />
+          <p
+            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
+          >
+            <strong>Welcome to the Genshin Impact Planner!</strong> This is
+            where you can plan all your daily, weekly, and long-term activities
+            for Genshin Impact.
           </p>
           <Link
             href="/login"
@@ -37,11 +38,11 @@ export default function Page() {
             alt="Screenshots of the planner showing desktop verison"
           />
           <Image
-          src=""
-          width={560}
-          height={620}
-          className="block md:hidden"
-          alt="Screenshot of the planner showing mobile verison"
+            src=""
+            width={560}
+            height={620}
+            className="block md:hidden"
+            alt="Screenshot of the planner showing mobile verison"
           />
         </div>
       </div>

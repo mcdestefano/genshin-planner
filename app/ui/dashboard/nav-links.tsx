@@ -2,22 +2,26 @@
 
 import {
   UserGroupIcon,
-  HomeIcon,
-  DocumentDuplicateIcon,
+  CalendarDaysIcon,
+  ListBulletIcon,
+  FolderIcon,
+  ShoppingBagIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname} from 'next/navigation';
 import clsx from 'clsx';
 
+// NOTE: Want to create custom inventory bag icon (and mabye the rest too) based on genshin
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/dashboard', icon: HomeIcon },
+  { name: 'Planner', href: '/dashboard', icon: CalendarDaysIcon },
   {
     name: 'Inventory',
     href: '/dashboard/inventory',
-    icon: DocumentDuplicateIcon,
+    icon: FolderIcon,
   },
+  { name: 'Priorities', href: '/dashboard/priorities', icon: ListBulletIcon },
   { name: 'Characters', href: '/dashboard/characters', icon: UserGroupIcon },
 ];
 

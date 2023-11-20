@@ -1,11 +1,11 @@
-const { db } = require("@vercel/postgres");
+const { db } = require('@vercel/postgres');
 const {
   invoices,
   customers,
   revenue,
   users,
-} = require("../app/lib/placeholder-data.js");
-const bcrypt = require("bcrypt");
+} = require('../app/lib/placeholder-data.js');
+const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {
   try {
@@ -41,7 +41,7 @@ async function seedUsers(client) {
       users: insertedUsers,
     };
   } catch (error) {
-    console.error("Error seeding users:", error);
+    console.error('Error seeding users:', error);
     throw error;
   }
 }
